@@ -7,7 +7,7 @@ f = open('biblio.yaml')
 obras = yaml.load(f)
 
 # generar archivos según el tipo de template
-def genera(llave, nombre_archivo):
+def genera(llave, nombre_archivo, template):
     
     # abrir archivo a escribir
     salida = open(nombre_archivo, 'w')
@@ -16,7 +16,7 @@ def genera(llave, nombre_archivo):
     obras.sort(key = lambda elemento: elemento[llave])
 
     # abrir template correspondiente
-    template = open('templates/tabla-xhtml.tpl', 'r').read()
+    template = open("templates/" + template + '.tpl', 'r').read()
     
     for obra in obras:
         # substtuir datos
@@ -33,4 +33,5 @@ def genera(llave, nombre_archivo):
               file = salida)
     
     
-genera( 'Autor', 'autor.html' )
+genera('Autor', 'autor.html', 'tabla-xhtml')
+genera('Autor', 'autor.xml', 'archivo-xml')
