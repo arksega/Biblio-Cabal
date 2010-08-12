@@ -11,7 +11,7 @@
   Formato: Libro
   Editorial: Sybex
   Fuente:
-  Tags: Memory, Programación y Multitaría
+  Tags: Memory, Programación y Multitarea
   Reseña: Una guía de referencia comprensiva para el set de instrucciones 80386.
   
 
@@ -19,7 +19,7 @@
   Título: Turbo Assembler Bible
   Autor: Gary Sick
   Año: 1991
-  ISBN: 
+  ISBN: 0-672-22716-9
   Idioma: En
   Formato: Libro
   Editorial: Sams
@@ -120,4 +120,221 @@
     evolucionado en plataformas computacionales especializadas, con habilidades
     altamente flexibles y complejas.     
 
+-
+  Título: MySQL Avanzado
+  Autor: Jeremy D. Zawodny y Derek J. Balling
+  Año: 2004
+  ISBN: 8441517592
+  Idioma: ES
+  Formato: Libro
+  Editorial: ANAYA O'reilly
+  Fuente:
+  Tags: MySQL, Base de Datos, DB, Medio, Avanzado
+  Reseña:
 
+    MySQL Avanzado le presenta los métodos, consejos y
+    aplicaciones para que pueda obtener el máximo partido
+    a dos aspectos clave como son la indexación y la
+    optimización.
+
+
+-
+  Título: DNS and BIND, 3rd Edition
+  Autor: Paul Albitz and Cricket Liu
+  Año: 1998
+  ISBN: 1565925122
+  Idioma: Inglés
+  Formato: Libro
+  Editorial: O'REILLY
+  Fuente:
+  Tags: DNS, BIND, Redes, Network
+  Reseña:
+
+    Este libro discute uno de los Bloques de construcción
+    fundamentales. Hosts de Bases de Información Distribuidos
+    que son responsables de traducir nombres en direcciones
+    entre muchos otros servicios.
+
+
+-
+  Título: Manual de referencia de PERL
+  Autor: Martin C. Brown
+  Año: 2001
+  ISBN: 8448128842
+  Idioma: Español
+  Formato: Libro
+  Editorial: McGraw-Hill
+  Fuente:
+  Tags: PERL, Manual, Referencia, Script, Avanzado
+  Reseña:
+    Muestra como escribir script PERL multiplataforma
+    con los que genera informes a partir de archivos de texto.
+
+-
+  Título: Algorithms with Perl
+  Autor: Jon Orvant, Jarrko Hietnaniemi & John Macdonald
+  Año: 1999
+  ISBN: 1-56592-398-7
+  Idioma: Inglés
+  Formato: Libro
+  Editorial: O'Reilly
+  Fuente: 
+  Tags: Perl, Programación
+  Reseña:
+
+-
+  Título: Learning Perl
+  Autor: Randal L. Schwartz
+  Año: 1993
+  ISBN: 1-56592-042-2
+  Idioma: Inglés
+  Formato: Libro
+  Editorial: O'Reilly
+  Fuente: 
+  Tags: Perl, Programación
+  Reseña:
+
+-
+  Título: PHP & MySQL for DUMMIES
+  Autor: Janet Valade
+  Año: 2002
+  ISBN: 0-7645-1650-7
+  Idioma: Inglés
+  Formato: Libro
+  Editorial: Hungry Mindsi, Inc.
+  Fuente: 
+  Tags: PHP, MySQL, Programación
+  Reseña:
+
+-
+  Título: Zend framework in action
+  Autor: Rob Allen, Nick Lo, Steven Brown
+  Año: 2009
+  ISBN: 1933988320
+  Idioma: Inglés
+  Formato: Libro
+  Editorial: Manning Publications Co.
+  Fuente: 
+  Tags: PHP, Zend, Programación
+  Reseña:
+
+-
+  Título: Advanced PHP programming
+  Autor: George schlossnagle
+  Año: 2004
+  ISBN: 0-672-32561-6
+  Idioma: Inglés
+  Formato: Libro
+  Editorial: Sams Publishing
+  Fuente: 
+  Tags: PHP, Programación
+  Reseña:
+    A practical guide to developing large-scale
+    web sites and applications with PHP 5.
+
+-
+  Título: Turbo C++
+  Autor: Ira Pohl
+  Año: 1991
+  ISBN: 0-8053-6017-4
+  Idioma: Inglés
+  Formato: Libro
+  Editorial: The Benjamin/Cummings Publishing Company Inc.
+  Fuente: 
+  Tags: C++, Programación
+  Reseña:
+    Un tutorial y referencia  de programación en Turbo C++
+    con ejemplos completos y probados, recorridos del
+    código y muchos ejercicios.
+
+-
+  Título: PHP pocket reference
+  Autor: Rasmus Lerdorf
+  Año: 2000
+  ISBN: 1-56592-769-9
+  Idioma: Inglés
+  Formato: Libro
+  Editorial: O'Reilly Associates
+  Fuente: 
+  Tags: PHP, Programación
+  Reseña:
+    Esta referencia de bolsillo enumera
+    la sintaxis y estructura básicas de
+    PHP, así como un acceso rapido a la
+    amplia lista de funciones de PHP.
+
+-
+  Título: The C programming language
+  Autor: Brian W. Kerninghan, Dennis M. Ritchie
+  Año: 1978
+  ISBN: 0-13-110163-3
+  Idioma: Inglés
+  Formato: Libro
+  Editorial: Prentice-Hall International
+  Fuente: 
+  Tags: C, Programación
+  Reseña:
+    El libro clásico del lenguage C
+    por sus desarrolladores.
+-
+  Título: C, a reference, Third edition
+  Autor: Samuel P. Harbison, Guy L. Steele Jr.
+  Año: 1991
+  ISBN: 0-13-110941-3
+  Idioma: Inglés
+  Formato: Libro
+  Editorial: Prentice-Hall, Inc.
+  Fuente: 
+  Tags: C, Programación
+  Reseña:
+    Una referencia del lenguage C, cubriendo
+    el estándar ANSI.  Presenta el lenguage de
+    abajo hacia arriba, y está organizado para
+    consulta rápida.
+
+-
+  Título: Instant C++ programming
+  Autor: Ian Wilks
+  Año: 1994
+  ISBN: 1-874416-29-X
+  Idioma: Inglés
+  Formato: Libro
+  Editorial: Wrox Press Ltd.
+  Fuente: 
+  Tags: C++, Programación
+  Reseña:
+    Un rápido tutorial enseña todo lo 
+    necesario en un instante y permite
+    escribir programas desde el primer
+    día.
+
+-
+  Título: El lenguaje de programación C++
+  Autor: Bjarne Stroustrup
+  Año: 2002
+  ISBN: 0-201-7007305
+  Idioma: Español
+  Formato: Libro
+  Editorial: Addison Wesley
+  Fuente: 
+  Tags: C++, Programación
+  Reseña:
+    El libro más leído y utilizado mundialmente
+    para aprender a programar en C++.  Bjarne
+    Stroustrup es el creador y diseñador original
+    de C++.
+
+-
+  Título: iAPX 86/88, 186/188 User's Manual, Programmer's Reference
+  Autor: Intel Corporation
+  Año: 1986
+  ISBN: 1-55512-010-5
+  Idioma: Inglés
+  Formato: Libro
+  Editorial: Intel Literature
+  Fuente: 
+  Tags: 8086, Microprocessor, Programación
+  Reseña:
+    Una introducción a las microcomputadoras,
+    seguida de la arquitectura, instrucciones
+    y diseño de la familia 86, 88, 186, 188.
