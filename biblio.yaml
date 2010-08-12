@@ -13,7 +13,7 @@
   Fuente:
   Tags: Memory, Programación y Multitarea
   Reseña: Una guía de referencia comprensiva para el set de instrucciones 80386.
-  
+
 
 -
   Título: Turbo Assembler Bible
@@ -26,7 +26,7 @@
   Fuente: Son expuestos los conceptos básicos así como las instrucciones
     a aprender para su uso en la programación de sistemas operativos.
     Aprenderá cómo instrucciones nemotécnicas y cómo mover informaciòn
-    con teorías de lenguaje simple.        
+    con teorías de lenguaje simple.
   Tags: Bible, Turbo Assembler.
   Reseña:
 
@@ -40,8 +40,8 @@
   Editorial: O'Reilly
   Fuente:
   Tags: Unix, manejador de noticias, correos, Unix
-  Reseña: Este manual enseña como comunicarse con UNIX y sistemas no UNIX 
-    con UUCP y cu y tip. También muestra cómo leer noticias y postear sus 
+  Reseña: Este manual enseña como comunicarse con UNIX y sistemas no UNIX
+    con UUCP y cu y tip. También muestra cómo leer noticias y postear sus
     artículos y correo a otros.
 
 
@@ -53,8 +53,8 @@
   Idioma: En
   Formato: Libro
   Editorial: O'Reilly
-  Fuente: 
-  Tags: Samba, Windows, Network, 
+  Fuente:
+  Tags: Samba, Windows, Network,
   Reseña: Este libro, con Open Content Licence, es una guía comprensiva para
     la administración de Samba, incluyendo recientes adiciones como integración
     los dominios de Windows NT y la herramienta gráfica de configuración.
@@ -68,9 +68,9 @@
   Idioma: EN
   Formato: Libro
   Editorial: O'Reilly
-  Fuente: 
+  Fuente:
   Tags:  correo, redes, configuración
-  Reseña: Esta edición cubre sendmail Versión 8.8 de Berkely y, la versión 
+  Reseña: Esta edición cubre sendmail Versión 8.8 de Berkely y, la versión
     disponible en la mayoría de los sistemas.
 
 
@@ -82,9 +82,9 @@
   Idioma: EN
   Formato: Libro
   Editorial: O'Reilly
-  Fuente: 
+  Fuente:
   Tags:  Sistemas, UNIX, BSD
-  Reseña: "El libro responde una de las preguntas más fundamentales que te 
+  Reseña: "El libro responde una de las preguntas más fundamentales que te
           puedes preguntar sobre tu computadora : ¿Cómo puedo hacer más sin comprar más
           hardware?"
 
@@ -99,8 +99,8 @@
   Editorial: O'Reilly
   Fuente: Libro
   Tags:  Sistemas, UNIX, Seguridad
-  Reseña: Como cualquier otro multy user system, UNIX requiere cuidado y 
-    configuración, este libro lo hace. Provee un compacto, tratamiento 
+  Reseña: Como cualquier otro multy user system, UNIX requiere cuidado y
+    configuración, este libro lo hace. Provee un compacto, tratamiento
     manejable de cada asuntos y tareas que todo responsable de un sistema UNIX
     enfrentar.
 
@@ -114,11 +114,27 @@
   Formato: Libro
   Editorial: O'Reilly
   Fuente: Libro
-  Tags:  Cisco, Reuters. Networks, 
-  Reseña: Los Routers son el pegamento que conecta las piezas de tu red. Hasta 
-    las más simples redes, esto no es una tarea sencilla. Reuters han 
+  Tags:  Cisco, Reuters. Networks,
+  Reseña: Los Routers son el pegamento que conecta las piezas de tu red. Hasta
+    las más simples redes, esto no es una tarea sencilla. Reuters han
     evolucionado en plataformas computacionales especializadas, con habilidades
-    altamente flexibles y complejas.     
+    altamente flexibles y complejas.
+
+-
+  Título: The Waite Group's Microsoft C Bible (Second Edition)
+  Autor: Naba Barkakati
+  Año: 1990
+  ISBN: 0672227363
+  Idioma: EN
+  Formato: Libro
+  Editorial: SAMS
+  Fuente: Libro
+  Tags: Programación, Microsoft C 6.0, Bible
+  Reseña: Este libro incluye más de 500 ejemplos de funciones de la librería
+    de Microsoft C 6.0. Contiene ejemplos del mundo real en cada rutina.
+    Contiene, además, tutoriales interactivos. Las rutinas de cada librería
+    están categorizadas por funciones. Contiene una tabla de compatibilidad
+    con otras versiones de C.
 
 -
   Título: MySQL Avanzado
@@ -338,3 +354,15 @@
     Una introducción a las microcomputadoras,
     seguida de la arquitectura, instrucciones
     y diseño de la familia 86, 88, 186, 188.
+
+-
+  Título: The Waite's Group New C Primer Plus
+  Autor: Mitchell Waite y Stephen Prata
+  Año: 1990
+  ISBN: 0672226871
+  Idioma: EN
+  Formato: Libro
+  Editorial: SAMS
+  Fuente: Libro
+  Tags: ANSI C, UNIX, Microsoft C, Turbo C, Programación
+  Reseña: Pendiente...
