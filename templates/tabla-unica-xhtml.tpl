@@ -13,6 +13,8 @@
     <tbody>
 <!--   -->
         <tr style="background-color:#ffffff ;"><td>{0}</td><td>{1}</td><td>{2}</td><td>{6}</td><td>{9}</td></tr>
+        <!-- alternate -->
+        <tr style="background-color:#eeeeee ;"><td>{0}</td><td>{1}</td><td>{2}</td><td>{6}</td><td>{9}</td></tr>
 <!--   -->
     </tbody>
 </table>
