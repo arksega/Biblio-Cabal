@@ -1,3 +1,4 @@
+<!--   -->
 <!-- Template de tabla XHTML 1.0 strict -->
 <table width="95%" cellspacing="0" cellpadding="5" style="margin:2%; border:thin solid #000000; text-align: left;">
     <thead>
@@ -59,3 +60,4 @@
         </tr>
     </tbody>
 </table>
+<!--   -->

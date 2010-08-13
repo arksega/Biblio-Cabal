@@ -1,4 +1,6 @@
 <?xml version="1.0"?>
+<catalogo>
+<!--   -->
 <libro>
     <Titulo>{0}</Titulo>
     <Autor>{1}</Autor>
@@ -11,3 +13,5 @@
     <Tags>{8}</Tags>
     <Resena>{9}</Resena>
 </libro>
+<!--   -->
+</catalogo>

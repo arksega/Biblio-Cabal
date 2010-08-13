@@ -17,9 +17,11 @@ def genera(llave, nombre_archivo, template):
 
     # abrir template correspondiente
     template = open("templates/" + template + '.tpl', 'r').read()
+    inicio, template, final = template.split( '<!--   -->')
     
+    print( inicio, file = salida)
     for obra in obras:
-        # substtuir datos
+        # substituir datos
         print(template.format( obra['Título'], 
                                obra['Autor'], 
                                obra['Año'], 
@@ -31,7 +33,8 @@ def genera(llave, nombre_archivo, template):
                                obra['Tags'], 
                                obra['Reseña']),
               file = salida)
-    
+    print( final, file = salida)
     
 genera('Autor', 'autor.html', 'tabla-xhtml')
 genera('Autor', 'autor.xml', 'archivo-xml')
+genera('Autor', 'tabla.html', 'tabla-unica-xhtml')
