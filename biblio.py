@@ -1,5 +1,7 @@
 import yaml
 
+import re
+
 class alternate( str ):
     'Alterna por los elementos.'
     def __init__( self, cadena ):
@@ -36,13 +38,24 @@ def genera(llave, nombre_archivo, template):
     # abrir template correspondiente
     template = open("templates/" + template + '.tpl', 'r').read()
     # separar en partes
-    inicio, template, final = template.split( '<!--   -->')
+    inicio, template, final = re.split( '<!--   -->|\n% section\n', template )
+    # escapar { y } propios de .tex
+    if '.tex' in nombre_archivo:
+        #template = re.sub( '{.[^0-9}]+}', '{\g<0>}', template )
+        template = template.replace( '{', '{{' )
+        template = template.replace( '}', '}}' )
+        template = template.replace( '$[', '{' )
+        template = template.replace( ']$', '}' )
     # manejar valores cambiantes, si los hay
     template = alternate( template )
     
     print( inicio, file = salida)
     for obra in obras:
         # substituir datos
+        if '.tex' in nombre_archivo:
+            for key, item in obra.items():
+              if type(item) is str:
+                obra[key] = obra[key].replace( '&', ' ' )
         print(template.format( obra['Título'], 
                                obra['Autor'], 
                                obra['Año'], 
@@ -59,3 +72,5 @@ def genera(llave, nombre_archivo, template):
 genera('Autor', 'autor.html', 'tabla-xhtml')
 genera('Autor', 'autor.xml', 'archivo-xml')
 genera('Autor', 'tabla.html', 'tabla-unica-xhtml')
+genera('Autor', 'tabla.tex', 'archivo-tex')
+genera('Autor', 'tablas.tex', 'archivo-tablas-tex')
