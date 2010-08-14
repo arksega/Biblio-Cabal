@@ -14,7 +14,7 @@
 % section
 \begin{tabular}{ | l | c | r | }
 \hline
-  $[Título]$ & $[Autor]$ & $[Año]$ \\
+  ((Título)) & ((Autor)) & ((Año)) \\
 \hline
 \end{tabular}
 

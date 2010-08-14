@@ -32,8 +32,8 @@ def carga_plantilla( template ):
     if 'tex' in nombre_archivo:
         template = template.replace( '{', '{{' )
         template = template.replace( '}', '}}' )
-        template = template.replace( '$[', '{' )
-        template = template.replace( ']$', '}' )
+        template = template.replace( '((', '{' )
+        template = template.replace( '))', '}' )
     # manejar valores cambiantes, si los hay
     template = alternate( template )
     return inicio, template, final
