@@ -20,6 +20,24 @@ class alternate( str ):
         self.n = (self.n + 1) % len(self.lista)
         return value.format( *params, **keywords )
 
+def carga_plantilla( template ):
+    'Lee y separa el archivo plantilla, regresa tres partes'
+
+    nombre_archivo = template
+    # abrir template correspondiente
+    template = open("templates/" + template + '.tpl', 'r').read()
+    # separar en partes
+    inicio, template, final = re.split( '<!--   -->|\n% section\n', template )
+    # escapar { y } propios de .tex
+    if 'tex' in nombre_archivo:
+        template = template.replace( '{', '{{' )
+        template = template.replace( '}', '}}' )
+        template = template.replace( '$[', '{' )
+        template = template.replace( ']$', '}' )
+    # manejar valores cambiantes, si los hay
+    template = alternate( template )
+    return inicio, template, final
+
 # abrir base de datos (yaml)
 f = open('biblio.yaml')
 
@@ -35,20 +53,9 @@ def genera(llave, nombre_archivo, template):
     # indicar una llave para ordenar
     obras.sort(key = lambda elemento: elemento[llave])
 
-    # abrir template correspondiente
-    template = open("templates/" + template + '.tpl', 'r').read()
-    # separar en partes
-    inicio, template, final = re.split( '<!--   -->|\n% section\n', template )
-    # escapar { y } propios de .tex
-    if '.tex' in nombre_archivo:
-        #template = re.sub( '{.[^0-9}]+}', '{\g<0>}', template )
-        template = template.replace( '{', '{{' )
-        template = template.replace( '}', '}}' )
-        template = template.replace( '$[', '{' )
-        template = template.replace( ']$', '}' )
-    # manejar valores cambiantes, si los hay
-    template = alternate( template )
-    
+    # cargar plantilla
+    inicio, template, final = carga_plantilla( template )
+
     print( inicio, file = salida)
     for obra in obras:
         # substituir datos
@@ -62,5 +69,6 @@ def genera(llave, nombre_archivo, template):
 genera('Autor', 'autor.html', 'tabla-xhtml')
 genera('Autor', 'autor.xml', 'archivo-xml')
 genera('Autor', 'tabla.html', 'tabla-unica-xhtml')
+genera('Autor', 'tabla2.html', 'tabla-unica-tres-xhtml')
 genera('Autor', 'tabla.tex', 'archivo-tex')
 genera('Autor', 'tablas.tex', 'archivo-tablas-tex')
