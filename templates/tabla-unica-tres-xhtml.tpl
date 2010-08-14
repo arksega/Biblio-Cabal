@@ -14,6 +14,8 @@
 <!--   -->
         <tr style="background-color:#ffffff ;"><td>{Título}</td><td>{Autor}</td><td>{Año}</td><td>{Editorial}</td><td>{Reseña}</td></tr>
         <!-- alternate -->
+        <tr style="background-color:#ffffff ;"><td>{Título}</td><td>{Autor}</td><td>{Año}</td><td>{Editorial}</td><td>{Reseña}</td></tr>
+        <!-- alternate -->
         <tr style="background-color:#eeeeee ;"><td>{Título}</td><td>{Autor}</td><td>{Año}</td><td>{Editorial}</td><td>{Reseña}</td></tr>
 <!--   -->
     </tbody>

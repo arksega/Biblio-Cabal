@@ -14,11 +14,11 @@ class alternate( str ):
         self.n = (self.n + 1) % len(self.lista)
         return value
 
-    def format( self, *params ):
+    def format( self, *params, **keywords ):
         'Override'
         value = self.lista[self.n]
         self.n = (self.n + 1) % len(self.lista)
-        return value.format( *params )
+        return value.format( *params, **keywords )
 
 # abrir base de datos (yaml)
 f = open('biblio.yaml')
@@ -56,17 +56,7 @@ def genera(llave, nombre_archivo, template):
             for key, item in obra.items():
               if type(item) is str:
                 obra[key] = obra[key].replace( '&', ' ' )
-        print(template.format( obra['Título'], 
-                               obra['Autor'], 
-                               obra['Año'], 
-                               obra['ISBN'], 
-                               obra['Idioma'] , 
-                               obra['Formato'], 
-                               obra['Editorial'], 
-                               obra['Fuente'], 
-                               obra['Tags'], 
-                               obra['Reseña']),
-              file = salida)
+        print(template.format( **obra ), file = salida)
     print( final, file = salida)
     
 genera('Autor', 'autor.html', 'tabla-xhtml')
