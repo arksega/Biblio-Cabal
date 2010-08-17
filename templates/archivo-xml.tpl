@@ -1,13 +1,17 @@
 <?xml version="1.0"?>
+<catalogo>
+<!--   -->
 <libro>
-    <Titulo>{0}</Titulo>
-    <Autor>{1}</Autor>
-    <Anio>{2}</Anio>
-    <ISBN>{3}</ISBN>
-    <Idioma>{4}</Idioma>
-    <Formato>{5}</Formato>
-    <Editorial>{6}</Editorial>
-    <Fuente>{7}</Fuente>
-    <Tags>{8}</Tags>
-    <Resena>{9}</Resena>
+    <Titulo>{Título}</Titulo>
+    <Autor>{Autor}</Autor>
+    <Anio>{Año}</Anio>
+    <ISBN>{ISBN}</ISBN>
+    <Idioma>{Idioma}</Idioma>
+    <Formato>{Formato}</Formato>
+    <Editorial>{Editorial}</Editorial>
+    <Fuente>{Fuente}</Fuente>
+    <Tags>{Tags}</Tags>
+    <Resena>{Reseña}</Resena>
 </libro>
+<!--   -->
+</catalogo>

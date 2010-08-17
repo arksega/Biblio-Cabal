@@ -1,5 +1,58 @@
 import yaml
 
+import re
+
+class alternate( str ):
+    'Alterna por los elementos.'
+    def __init__( self, cadena ):
+        self.lista = cadena.split( '<!-- alternate -->' )
+        self.n = 0
+
+    def __repr__( self ):
+        'Override'
+        value = self.lista[self.n]
+        self.n = (self.n + 1) % len(self.lista)
+        return value
+
+    def format( self, *params, **keywords ):
+        'Override'
+        value = self.lista[self.n]
+        self.n = (self.n + 1) % len(self.lista)
+        return value.format( *params, **keywords )
+
+def carga_plantilla( template ):
+    'Lee y separa el archivo plantilla, regresa tres partes'
+
+    nombre_archivo = template
+    # abrir template correspondiente
+    template = open("templates/" + template + '.tpl', 'r').read()
+    # separar en partes
+    inicio, template, final = re.split( '<!--   -->|\n% section\n', template )
+    # escapar { y } propios de .tex
+    if 'tex' in nombre_archivo:
+        template = template.replace( '{', '{{' )
+        template = template.replace( '}', '}}' )
+        template = template.replace( '((', '{' )
+        template = template.replace( '))', '}' )
+    # manejar valores cambiantes, si los hay
+    template = alternate( template )
+    return inicio, template, final
+
+def traducir_contenido( nombre_archivo, obra ):
+    'Convierte caracteres si hace falta según el formato.'
+
+    # Convertir & para TeX
+    if '.tex' in nombre_archivo:
+        for key, item in obra.items():
+          if type(item) is str:
+            obra[key] = obra[key].replace( '&', 'and' )
+    # Convertir & para XML
+    if '.xml' in nombre_archivo:
+        for key, item in obra.items():
+          if type(item) is str:
+            obra[key] = obra[key].replace( '&', '&amp;' )
+
+
 # abrir base de datos (yaml)
 f = open('biblio.yaml')
 
@@ -15,23 +68,18 @@ def genera(llave, nombre_archivo, template):
     # indicar una llave para ordenar
     obras.sort(key = lambda elemento: elemento[llave])
 
-    # abrir template correspondiente
-    template = open("templates/" + template + '.tpl', 'r').read()
-    
+    # cargar plantilla
+    inicio, template, final = carga_plantilla( template )
+
+    print( inicio, file = salida)
     for obra in obras:
-        # substtuir datos
-        print(template.format( obra['Título'], 
-                               obra['Autor'], 
-                               obra['Año'], 
-                               obra['ISBN'], 
-                               obra['Idioma'] , 
-                               obra['Formato'], 
-                               obra['Editorial'], 
-                               obra['Fuente'], 
-                               obra['Tags'], 
-                               obra['Reseña']),
-              file = salida)
-    
+        traducir_contenido( nombre_archivo, obra )
+        print(template.format( **obra ), file = salida)
+    print( final, file = salida)
     
 genera('Autor', 'autor.html', 'tabla-xhtml')
 genera('Autor', 'autor.xml', 'archivo-xml')
+genera('Autor', 'tabla.html', 'tabla-unica-xhtml')
+genera('Autor', 'tabla2.html', 'tabla-unica-tres-xhtml')
+genera('Autor', 'tabla.tex', 'archivo-tex')
+genera('Autor', 'tablas.tex', 'archivo-tablas-tex')
